@@ -19,15 +19,7 @@ module.exports = {
         light: '#F9F9F9',
       },
       fontFamily: {
-        sans: [
-          'Poppins',
-          'Inter',
-          'Avenir',
-          'Helvetica',
-          'Roboto',
-          'Arial',
-          'sans-serif',
-        ],
+        sans: ['Poppins', 'Helvetica', 'Roboto', 'Arial', 'sans-serif'],
       },
     },
   },
