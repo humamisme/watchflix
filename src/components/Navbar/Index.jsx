@@ -62,6 +62,7 @@ function Navbar() {
             <Button
               className="self-end p-0 md:hidden"
               onClick={handleNavMenuButtonClick}
+              aria-label="close"
             >
               <CrossIcon />
             </Button>
@@ -86,9 +87,10 @@ function Navbar() {
             <Button
               className="!ml-auto hidden md:block lg:flex lg:w-full lg:max-w-[256px] lg:bg-gray-200/90 lg:dark:bg-gray-600/50"
               onClick={handleSearchButtonClick}
+              aria-label="search toggle"
             >
               <SearchIcon />
-              <span className="ml-2 hidden text-gray-400 lg:inline">
+              <span className="ml-2 hidden text-gray-300 lg:inline">
                 Search
               </span>
             </Button>
@@ -100,10 +102,13 @@ function Navbar() {
           </div>
         </div>
         <div className="ml-auto flex space-x-2 md:hidden">
-          <Button onClick={handleSearchButtonClick}>
+          <Button onClick={handleSearchButtonClick} aria-label="search toggle">
             <SearchIcon />
           </Button>
-          <Button onClick={handleNavMenuButtonClick}>
+          <Button
+            onClick={handleNavMenuButtonClick}
+            aria-label="Menu toggle button"
+          >
             <HamburgerIcon />
           </Button>
         </div>
@@ -119,7 +124,11 @@ function Navbar() {
           className="relative m-auto flex max-w-7xl flex-col space-y-4 rounded-xl border bg-gray-50 p-4 shadow dark:border-gray-700 dark:bg-dark-2"
           ref={searchBoxRef}
         >
-          <Button className="self-end p-0" onClick={handleSearchButtonClick}>
+          <Button
+            className="self-end p-0"
+            onClick={handleSearchButtonClick}
+            aria-label="close"
+          >
             <CrossIcon />
           </Button>
           <SearchBox />

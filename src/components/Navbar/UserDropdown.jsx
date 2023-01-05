@@ -13,6 +13,7 @@ function UserDropdown() {
   return (
     <div className="relative" ref={dropdownRef}>
       <Button
+        aria-label="user dropdown"
         className="flex items-center border shadow dark:border-gray-700 md:border-none md:shadow-none"
         onClick={handleDropdownToggle}
       >
