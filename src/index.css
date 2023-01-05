@@ -12,3 +12,26 @@
     @apply text-gray-700 dark:bg-dark-1 dark:text-gray-100;
   }
 }
+
+input[type='search']:focus::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: currentColor;
+  -webkit-mask-image: url('./assets/cross.svg');
+  -webkit-mask-size: cover;
+  mask-image: url('./assets/cross.svg');
+  mask-size: cover;
+  cursor: pointer;
+}
+input[type='search']:hover::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  height: 16px;
+  width: 16px;
+  background-color: currentColor;
+  -webkit-mask-image: url('./assets/cross.svg');
+  -webkit-mask-size: cover;
+  mask-image: url('./assets/cross.svg');
+  mask-size: cover;
+  cursor: pointer;
+}
